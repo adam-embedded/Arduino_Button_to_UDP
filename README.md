@@ -5,12 +5,14 @@ This repo features the source for the microcontroller button and the desktop bas
 
 ## Microcontroller Software
 
+Name: single_button_to_serial
+
 This is a platformio project written using the arduino framework. Messages are sent to and from the device by serial.
 The devices presents itself over the USB protocol as a virtual serial device. Within windows this can be found at a typical location of “COM1”, within Linux it can be commonly found named “/dev/ttyUSB0”.
 
 ## Desktop software
 
-Name: single_button_desktop_app
+Name: single_button_desktop_interface
 
 This is a c program that connects to the device over serial. It sets up the device and handles all quality of service parts of the device. If a button event is triggered, the application will transmit a 1 or 0 over UDP in client mode. 
 The software requires a UDP server to currectly function.
