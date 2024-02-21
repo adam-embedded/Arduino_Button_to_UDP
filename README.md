@@ -10,6 +10,8 @@ The devices presents itself over the USB protocol as a virtual serial device. Wi
 
 ## Desktop software
 
+Name: single_button_desktop_app
+
 This is a c program that connects to the device over serial. It sets up the device and handles all quality of service parts of the device. If a button event is triggered, the application will transmit a 1 or 0 over UDP in client mode. 
 The software requires a UDP server to currectly function.
 
